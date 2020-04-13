@@ -1,0 +1,11 @@
+{% extends 'admin/change_list.html' %}
+
+{% block result_list %}
+    <div>
+        Notify:
+        <button type="submit" name="notify" value="all">All Users</button>
+        <button type="submit" name="notify" value="selected">Selected Users only</button>
+    </div>
+    <br />
+    {{ block.super }}
+{% endblock %}
